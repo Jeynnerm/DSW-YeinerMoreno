@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <a name="inicio"></a>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Diseños de sitios Web </title>
+</head>
+<a href="/index.html">Página anterior</a>
+<body>
+     <!-- Primer punto de la actividad -->
+     <header> 
+        <h1> Etiquetas Semánticas, CSS Grid </h1>
+        </header>
+        <hr>
+     <!-- Segundo punto de la actividad -->
+    <nav>
+        <ul>
+            <li> Inicio </li><br>
+            <li> Temas 
+                <ul>
+                    <li> Etiquetas Semánticas </li>
+                    <li> CSS Grid </li>
+                </ul>
+                
+            </li>
+            <br>
+            <li> Recursos Digitales
+                <ul>
+                    <li> Opción 1 </li>
+                    <li> Opción 2 </li>
+                </ul>
+            </li>
+            <br>
+            <li> Aprendizaje </li>
+            <li> Acerca de </li>
+        </ul>
+    </nav>
+       <hr>
+     <!-- Este es el contenido principal de la página 
+     Tercer punto de la actividad-->
+    
+        <main>
+            <section>
+                <h3> Propósito del Sitio </h3>           
+                <p> El propósito del sitio es elaborar e implementar recursos educativos digitales para dinamizar las estrategias de aprendizaje, apoyándose en la construcción de estos recurso con el tema de Etiquetas semánticas, CSS Grid.</p>
+          <hr> 
+     <!-- Cuarto punto de la actividad -->        
+                <article>
+                    <!-- tema 1 -->
+                    <h3> Etiquetas Semánticas </h3>
+                    <p> Las etiquetas semánticas ayudan a definir la estructura del documento y permiten que las páginas web sean mejor <b>indexadas</b> por los buscadores.
+
+                        HMTL5 incorpora nuevas etiquetas pensadas en hacer una estructura de la página web más lógica y funcional, antes en la estructura de una pagina web se basaba fundamentalmente en etiquetas &lt;div&gt; estas estaban generalmente asociadas a un id. En HTML 4.0 por ejemplo, para definir la cabecera de una página web se utilizaba:
+                        &lt;div id= "header" &gt; Nombre de la cabecera &lt;/div&gt;. </p>
+                        
+                        <p>
+                        En la especificación HTML5 existe ya una etiqueta llamada &lt;header&gt; que viene a sustituir al elemento &lt;div&gt; de forma que la sintaxis es mucho más lógica y coherente, se trata de un tipo de etiqueta llamada semántica porque da una noción del tipo de contenido que englobará:<br>&lt;header&gt; Nombre de la cabecera &lt;header&gt; </br> 
+                        <br>En este ejemplo ya se pueden añadir directamente las propiedades de estilo (ancho, alto, color de fondo, etc.) en una regla para el nuevo elemento header de CSS:</br> header {width:960px; height:100px; background-color:blue;}<br></br>
+                        En definitiva, en HTML5 se incorporan las etiquetas semánticas:
+
+                        <ul>
+                            <li> <b> &lt;header&gt; ... &lt;/header&gt;:</b> Se utiliza para definir la cabecera de la página web. </li> <br>
+
+                            <li> <b> &lt;footer&gt; ... &lt;/footer&gt;:</b> Se utiliza para definir el pie de página. Normalmente contiene datos sobre quien ha creado la página, datos del copyright, etc. </li> </br>
+
+                            <li> <b> &lt;nav&gt; ... &lt;/nav&gt;:</b> Permite definir un elemento de navegación de la página web, como el menú principal o menús secundarios. </li> <br>
+
+                            <li> <b> &lt;section&gt; ... &lt;/section&gt;:</b> Se utilizan para encerrar el código correspondiente a una sección genérica dentro de un documento. </li> </br>
+
+                            <li> <b> &lt;aside&gt; ... &lt;/aside&gt;:</b> Sirve para delimitar todo aquel contenido que no es directamente contenido principal de esa página en concreto. Puede usarse por tanto para todos aquellos elementos secundarios como bloques publicitarios, enlaces externos, citas, un calendario, etc. </li> <br>
+
+                            <li> <b> &lt;article&gt; ... &lt;/article&gt;:</b> Se utiliza para definir artículos como noticias, entradas de un blog, etc. Es probablemente uno de los más importantes de HTML5, ya que permite indicar cuál es el contenido de una página web.</li>
+                        </ul>
+                        A continuación un ejemplo de lo que podría ser una visualización esquemática de la estructura de una pagina web utilizando las nuevas etiquetas semánticas de HMTL5.
+                         </p>
+                    <img src="img/etiquetas.JPG" alt="Etiquetas Semánticas">              
+                </article>
+
+                <article>
+                    <!-- tema 2 -->
+                    <h3> CSS Grid </h3>  
+                    <p>Es un sistema de maquetación basado en grillas y se caracteriza por ser bidimensional. Las cuadrículas se pueden utilizar para posicionar áreas principales de la página o pequeños elementos de la interfaz de usuario.<br>
+                    Hace un tiempo se trabajaba con los llamados <b>floats</b>, pero es una técnica compleja que daba lugar a muchos errores. Hoy los diseñadores cuentan con dos métodos para implementar un diseño dinámico: además de CSS grid, también se puede usar <b>Flexbox</b>. Sin embargo, las dos técnicas difieren en algunos aspectos.<br></br>Flexbox es unidimensional. Esto quiere decir que los elementos solo se pueden mover a lo largo de un eje. En cambio, un diseño <b>CSS Grid</b> ofrece al diseñador web dos dimensiones para la colocación de los objetos porque, en lugar de solo un eje, permite crear una rejilla con filas y columnas.<br></br>
+                    <img src="img/css.JPG" alt="Imagen de CSS Grid"><br></br>
+                    Para utilizar Grid CSS necesitaremos tener en cuenta una serie de conceptos que utilizaremos a partir de ahora y que definiremos a continuación:
+                    </p> 
+                    <ul>
+                      <li>
+                        <b>Contenedor:</b> El elemento padre contenedor que definirá la cuadrícula o rejilla.
+                      </li><br>
+                      <li>
+                          <b>Ítem:</b> Cada uno de los hijos que contiene la cuadrícula (elemento contenedor).
+                        </li></br>
+                      <li>
+                        <b>Celda (grid cell):</b> Cada uno de los cuadritos (unidad mínima) de la cuadrícula.
+                      </li><br>
+                      <li>
+                        <b>Area (grid area):</b> Región o conjunto de celdas de la cuadrícula.
+                      </li></br>
+                      <li>
+                        <b>Banda (grid track):</b> Banda horizontal o vertical de celdas de la cuadrícula.
+                      </li><br>
+                      <li>
+                        <b>Línea (grid line):</b> Separador horizontal o vertical de las celdas de la cuadrícula.
+                      </li>
+                    </ul>
+                    <h3> Propiedades del contenedor Grid </h3>
+                    <img src="img/grid.JPG" alt="Propiedades de un contenedor grid">
+                    <p><b>Referencia</b><br></br>
+                        Celaya Luna, A. (2014). Creación de páginas web: HTML 5. Málaga, Spain: Editorial ICB. Recuperado de:
+                        <a href="https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/56045?page=29.">https://elibro-net.bibliotecavirtual.unad.edu.co/es/ereader/unad/56045?page=29.</a>
+                    </p>
+                </article>
+            </section>
+        
+        </main>
+         <hr>
+    
+    <h2>Mi Mockup</h2>
+    <img src="img/Mockup.JPG" alt="Se hace uso del mockup de la pagina a diseñar"/>
+        
+    <section>
+        <article>
+        <h4>Aprendizaje</h4>
+        <p> En la construcción de esta página tratamos el tema de Etiquetas Semánticas, CSS Grid con ejemplos y de una manera óptima, cumpliendo con el objetivo de diseñar sitios web utilizando el lenguaje HTML de acuerdo a los requerimiento del usuario. </p>
+    </article>    
+    </section>
+    <hr>
+    <!-- Quinto punto de la actividad --> 
+        <footer>
+            <h4>Acerca de:</h4>
+            <p>Correo: ymorenoj@unadvirtual.edu.co</p>
+            <p> Skype: ymorenoj02@outlook.com </p>
+            <p> Fecha: 28 de Septiembre del 2021 </p>
+        </footer>
+</body>
+<a href="#inicio"> Regresar al inicio</a>
+</html>
