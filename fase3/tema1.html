@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseños de sitios Web</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header> 
+        <img class="logo" src="img/logo1.png" alt="logo">
+    <h1>Etiquetas Semánticas, CSS Grid</h1>  
+ </header>
+ 
+ <nav class="menu">
+     <ul>
+     <li><a href="index.html">Inicio</a></li>
+     <li>
+         <a href="#">Temas</a>
+         <ul>
+             <li><a href="tema1.html">Etiquetas Semánticas</a></li>
+             <li><a href="tema2.html">CSS Grid</a></li>
+         </ul>
+     </li>
+
+     <li><a href="#">Recursos Digitales</a>
+         <ul>
+             <li><a href="recurso1.html">Recurso 1</a></li>
+             <li><a href="recurso2.html">Recurso 2</a></li>
+         </ul>
+     </li>
+     <li><a href="#">Aprendizaje</a>
+         <ul>
+             <li><a href="#">Actividad 1</a></li>
+             <li><a href="#">Actividad 2</a></li>
+         </ul>
+     </li>
+     <li><a href="autor.html">Autor</a></li>
+     </ul>
+     
+ </nav>
+ <main>
+       <section>
+         <br><h3> Etiquetas Semánticas </h3><br>          
+         
+         <article>
+            <p style="text-align: justify;"> Las etiquetas semánticas ayudan a definir la estructura del documento y permiten que las páginas web sean mejor <b>indexadas</b> por los buscadores.
+
+                HMTL5 incorpora nuevas etiquetas pensadas en hacer una estructura de la página web más lógica y funcional, antes en la estructura de una pagina web se basaba fundamentalmente en etiquetas &lt;div&gt; estas estaban generalmente asociadas a un id. En HTML 4.0 por ejemplo, para definir la cabecera de una página web se utilizaba:
+                &lt;div id= "header" &gt; Nombre de la cabecera &lt;/div&gt;.</p><br>
+         </article>
+         
+         <article>
+            <p style="text-align: justify;">En la especificación HTML5 existe ya una etiqueta llamada &lt;header&gt; que viene a sustituir al elemento &lt;div&gt; de forma que la sintaxis es mucho más lógica y coherente, se trata de un tipo de etiqueta llamada semántica porque da una noción del tipo de contenido que englobará:<br>&lt;header&gt; Nombre de la cabecera &lt;header&gt; </br> 
+                <br>En este ejemplo ya se pueden añadir directamente las propiedades de estilo (ancho, alto, color de fondo, etc.) en una regla para el nuevo elemento header de CSS:</br> header {width:960px; height:100px; background-color:blue;}<br></br>
+                En definitiva, en HTML5 se incorporan las etiquetas semánticas:
+
+                <ul>
+                    <li> <b> &lt;header&gt; ... &lt;/header&gt;:</b> Se utiliza para definir la cabecera de la página web. </li> <br>
+
+                    <li> <b> &lt;footer&gt; ... &lt;/footer&gt;:</b> Se utiliza para definir el pie de página. Normalmente contiene datos sobre quien ha creado la página, datos del copyright, etc. </li> </br>
+
+                    <li> <b> &lt;nav&gt; ... &lt;/nav&gt;:</b> Permite definir un elemento de navegación de la página web, como el menú principal o menús secundarios. </li> <br>
+
+                    <li> <b> &lt;section&gt; ... &lt;/section&gt;:</b> Se utilizan para encerrar el código correspondiente a una sección genérica dentro de un documento. </li> </br>
+
+                    <li> <b> &lt;aside&gt; ... &lt;/aside&gt;:</b> Sirve para delimitar todo aquel contenido que no es directamente contenido principal de esa página en concreto. Puede usarse por tanto para todos aquellos elementos secundarios como bloques publicitarios, enlaces externos, citas, un calendario, etc. </li> <br>
+
+                    <li> <b> &lt;article&gt; ... &lt;/article&gt;:</b> Se utiliza para definir artículos como noticias, entradas de un blog, etc. Es probablemente uno de los más importantes de HTML5, ya que permite indicar cuál es el contenido de una página web.</li>
+                </ul>
+                A continuación un ejemplo de lo que podría ser una visualización esquemática de la estructura de una pagina web utilizando las nuevas etiquetas semánticas de HMTL5.
+                 </p><br>
+            <img src="img/etiquetas.JPG" alt="Etiquetas Semánticas"> 
+         </article>
+     </section>
+     <aside>
+         <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Ffacebook.com%2FUniversidadUNAD%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+     
+     </aside>
+ </main>
+ <footer>
+    <p style="text-align: center;"> © UNAD-2021<br>
+        Curso: Diseños de Sitios Web.
+    </p>
+     </footer>
+</body>
+</html>
